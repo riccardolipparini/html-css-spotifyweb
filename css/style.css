@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* macrodebug */
+#container{
+    display: flex;
+    height: calc(100vh - 200px);
+    width: 100%;
+    /* debug */
+    background-color: brown;
+}
+#player{
+    height: 200px;
+    width: 100%;
+    /* debug */
+    background-color: rgba(40,40,40,255)
+}
+#home{
+    height: 100%;
+    width: 400px;
+    /* debug */
+    background-color: black;
+}
+main{
+    height: 100%;
+    width: calc(100% - 400px);
+    /* debug */
+    background-color:rgba(20,25,34,255);
+}
