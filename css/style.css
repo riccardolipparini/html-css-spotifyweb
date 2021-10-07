@@ -198,16 +198,18 @@ main{
     /* debug */
 }
 .songs{
-    width: calc(90% / 5);
-    /* debug */
+    width: calc(90% / 6);
     height: 200px;
 }
 .songs-text{
-    display: flex;
-    width: calc(90% / 5);
-    /* debug */
-    height: 50px;
-    background-color: chocolate;
+    text-align: center;
+    width: calc(90% / 6);
+}
+.songs-text h3{
+    color: white;
+}
+.songs-text p{
+    color: lightgray;
 }
 
 .songs img{
