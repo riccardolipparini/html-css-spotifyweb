@@ -22,7 +22,6 @@ a{
     width: 100%;
     /* debug */
     background-color: rgba(40,40,40,255);
-    z-index: 100;
 }
 .flexbox{
     display: flex
@@ -126,6 +125,7 @@ main{
     width: calc(100% - 250px);
     /* debug */
     background-color:rgba(20,25,34,255);
+    overflow: scroll;
 }
 
 #containupgrade{
@@ -181,41 +181,84 @@ main{
     border: lightgreen solid 1px;
 }
 
-#recentlyplayed{
+.titles{
     width: 95%;
     margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
+    padding: 20px 0;
 }
-#recentlyplayed h2{
+.titles h2{
     color: white;
+}
+.titles p{
+    color: rgb(165, 165, 165);
+    font-size: 12px;
 }
 .songscontainer{
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    height: 350px;
     /* debug */
 }
 .songs{
+    position: relative;
     width: calc(90% / 6);
     height: 200px;
 }
 .songs-text{
     text-align: center;
-    width: calc(90% / 6);
 }
 .songs-text h3{
     color: white;
 }
 .songs-text p{
-    color: lightgray;
+    color: rgb(165, 165, 165);
 }
 
 .songs img{
     width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+.suggested{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    margin: 0 auto;
+}
+.suggested .songs{
+    margin-right: 20px;
+}
+.circle{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    /* debug */
+}
+.circle img{
+    width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.songs .fa-play-circle{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    visibility: hidden;
+}
+.fa-play-circle:hover{
+    visibility: visible;
+}
+
+.songs:hover{
+    opacity: 0.5;
 }
 
 
